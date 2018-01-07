@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Codewars_SimplePigLatin
@@ -27,7 +28,7 @@ namespace Codewars_SimplePigLatin
         [TestMethod]
         public void Input_ab_ba_Should_Be_baay_abay()
         {
-            Assert.AreEqual("baay abay",Kata.PigIt("ab ba"));
+            Assert.AreEqual("baay abay", Kata.PigIt("ab ba"));
         }
 
     }
@@ -41,14 +42,7 @@ namespace Codewars_SimplePigLatin
 
         public static string PigIt(string str)
         {
-            var splitted = str.Split();
-            var result = new List<string>();
-            foreach (var s in splitted)
-            {
-               result.Add(PigPart(s));
-            }
-            return string.Join(" ", result);
-
+            return string.Join(" ", str.Split().Select(PigPart).ToList());
         }
     }
 }
