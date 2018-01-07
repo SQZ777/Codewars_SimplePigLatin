@@ -29,11 +29,7 @@ namespace Codewars_SimplePigLatin
     {
         public static string PigPart(string s)
         {
-            if (s.Length > 0)
-            {
-                return s.Remove(0, 1) + s[0] + "ay";
-            }
-            return string.Empty;
+            return s.Length > 0 ? s.Remove(0, 1) + s[0] + "ay" : string.Empty;
         }
     }
 }
