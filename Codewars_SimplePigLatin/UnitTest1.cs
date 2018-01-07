@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Codewars_SimplePigLatin
@@ -40,7 +41,14 @@ namespace Codewars_SimplePigLatin
 
         public static string PigIt(string str)
         {
-            throw new System.NotImplementedException();
+            var splitted = str.Split();
+            var result = new List<string>();
+            foreach (var s in splitted)
+            {
+               result.Add(PigPart(s));
+            }
+            return string.Join(" ", result);
+
         }
     }
 }
