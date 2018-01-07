@@ -31,6 +31,12 @@ namespace Codewars_SimplePigLatin
             Assert.AreEqual("baay abay", Kata.PigIt("ab ba"));
         }
 
+        [TestMethod]
+        public void Input_Hello_World_Should_Be_elloHay_orldWay()
+        {
+            Assert.AreEqual("elloHay orldWay",Kata.PigIt("Hello World"));
+        }
+
     }
 
     public class Kata
