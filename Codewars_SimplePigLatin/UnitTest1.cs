@@ -6,8 +6,17 @@ namespace Codewars_SimplePigLatin
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void PigPart_Input_Empty_Should_Be_Empty()
         {
+            Assert.AreEqual(string.Empty,Kata.PigPart(string.Empty));
+        }
+    }
+
+    public class Kata
+    {
+        public static string PigPart(string s)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
