@@ -23,6 +23,10 @@ namespace Codewars_SimplePigLatin
     {
         public static string PigPart(string s)
         {
+            if (s.Length > 0)
+            {
+                return s + "ay";
+            }
             return string.Empty;
         }
     }
