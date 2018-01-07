@@ -20,7 +20,7 @@ namespace Codewars_SimplePigLatin
         [TestMethod]
         public void PigPart_Input_ab_Should_Be_baay()
         {
-            Assert.AreEqual("baay",Kata.PigPart("ab"));
+            Assert.AreEqual("baay", Kata.PigPart("ab"));
         }
 
     }
@@ -31,7 +31,7 @@ namespace Codewars_SimplePigLatin
         {
             if (s.Length > 0)
             {
-                return s + "ay";
+                return s.Remove(0, 1) + s[0] + "ay";
             }
             return string.Empty;
         }
