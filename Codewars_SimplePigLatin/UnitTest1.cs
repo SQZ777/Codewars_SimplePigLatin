@@ -17,6 +17,12 @@ namespace Codewars_SimplePigLatin
             Assert.AreEqual("aay", Kata.PigPart("a"));
         }
 
+        [TestMethod]
+        public void PigPart_Input_ab_Should_Be_baay()
+        {
+            Assert.AreEqual("baay",Kata.PigPart("ab"));
+        }
+
     }
 
     public class Kata
