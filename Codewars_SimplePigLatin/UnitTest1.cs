@@ -23,6 +23,12 @@ namespace Codewars_SimplePigLatin
             Assert.AreEqual("baay", Kata.PigPart("ab"));
         }
 
+        [TestMethod]
+        public void Input_ab_ba_Should_Be_baay_abay()
+        {
+            Assert.AreEqual("baay abay",Kata.PigIt("ab ba"));
+        }
+
     }
 
     public class Kata
@@ -30,6 +36,11 @@ namespace Codewars_SimplePigLatin
         public static string PigPart(string s)
         {
             return s.Length > 0 ? s.Remove(0, 1) + s[0] + "ay" : string.Empty;
+        }
+
+        public static string PigIt(string str)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
