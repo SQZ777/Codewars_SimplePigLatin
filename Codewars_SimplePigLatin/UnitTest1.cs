@@ -16,7 +16,7 @@ namespace Codewars_SimplePigLatin
     {
         public static string PigPart(string s)
         {
-            throw new System.NotImplementedException();
+            return string.Empty;
         }
     }
 }
