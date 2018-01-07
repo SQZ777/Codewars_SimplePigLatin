@@ -8,8 +8,15 @@ namespace Codewars_SimplePigLatin
         [TestMethod]
         public void PigPart_Input_Empty_Should_Be_Empty()
         {
-            Assert.AreEqual(string.Empty,Kata.PigPart(string.Empty));
+            Assert.AreEqual(string.Empty, Kata.PigPart(string.Empty));
         }
+
+        [TestMethod]
+        public void PigPart_Input_a_Should_Be_aay()
+        {
+            Assert.AreEqual("aay", Kata.PigPart("a"));
+        }
+
     }
 
     public class Kata
